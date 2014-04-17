@@ -5,7 +5,7 @@ from django.utils.safestring import mark_for_escaping as _escape
 
 from interlinears import make_html_interlinear
 
-class InterlinearModel(models.Model):
+class InterlinearModelMixin(models.Model):
     """Mixin for Django models to give them an interlinear field with
     the necessary logic."""
 
@@ -28,5 +28,5 @@ class InterlinearModel(models.Model):
         new_il = self.get_interlinear()
         if new_il:
             self.il_xhtml = new_il
-        super(InterlinearModel, self).save(*args, **kwargs)
+        super(InterlinearModelMixin, self).save(*args, **kwargs)
 

@@ -8,5 +8,5 @@ in Django.
 What's here:
 ------------
 
-linguistics.mixins.InterlinearMixin
+linguistics.models.mixins.InterlinearModelMixin
     A mixin that adds an interlinear field to a model
