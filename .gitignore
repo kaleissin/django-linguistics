@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+*.sqp
+*~
+.coverage
+.tox
+build
+dist
+htmlcov
+MANIFEST
+src/*.egg-info
